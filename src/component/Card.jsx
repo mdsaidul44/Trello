@@ -25,13 +25,12 @@ const Card = () => {
                     </figure>
                     <div className="card-body">
                         <h2 className="card-title">
-                            {data.name}
-                            <div className="badge badge-secondary">NEW</div>
+                            {data.name} 
                         </h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <p>{data.short_description}</p>
                         <div className="card-actions justify-end">
-                            <div className="badge badge-outline">Fashion</div>
-                            <div className="badge badge-outline">Products</div>
+                            <div className="badge badge-outline">Details</div>
+                            <div className="badge badge-outline">Delate</div>
                         </div>
                     </div>
                 </div>)

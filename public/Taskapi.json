@@ -3,70 +3,70 @@
       "id": 1,
       "name": "John Doe",
       "title": "Software Engineer",
-      "image": "https://via.placeholder.com/150",
+      "image": "https://i.ibb.co.com/8nZDyVX6/images.jpg",
       "short_description": "Passionate developer specializing in web technologies."
     },
     {
       "id": 2,
       "name": "Jane Smith",
       "title": "UI/UX Designer",
-      "image": "https://via.placeholder.com/150",
+      "image": "https://i.ibb.co.com/KjRvP1YC/images.png",
       "short_description": "Creative designer focused on user-centered design."
     },
     {
       "id": 3,
       "name": "Michael Brown",
       "title": "Data Scientist",
-      "image": "https://via.placeholder.com/150",
+      "image": "https://i.ibb.co.com/sd6ZMRbP/images-1.png",
       "short_description": "Expert in machine learning and big data analytics."
     },
     {
       "id": 4,
       "name": "Emily Johnson",
       "title": "Project Manager",
-      "image": "https://via.placeholder.com/150",
+      "image": "https://i.ibb.co.com/SDmS5YB3/images-1.jpg",
       "short_description": "Experienced in managing large-scale IT projects."
     },
     {
       "id": 5,
       "name": "Chris Wilson",
       "title": "Backend Developer",
-      "image": "https://via.placeholder.com/150",
+      "image": "https://i.ibb.co.com/XZqFdQbd/images-2.jpg",
       "short_description": "Loves building scalable and efficient backend systems."
     },
     {
       "id": 6,
       "name": "Sophia Martinez",
       "title": "Marketing Specialist",
-      "image": "https://via.placeholder.com/150",
+      "image": "https://i.ibb.co.com/tpkDMNRQ/images-3.jpg",
       "short_description": "Driven by data and creativity to grow brands."
     },
     {
       "id": 7,
       "name": "David Lee",
       "title": "Cybersecurity Analyst",
-      "image": "https://via.placeholder.com/150",
+      "image": "https://i.ibb.co.com/bjQpdJ0V/download.jpg",
       "short_description": "Securing digital assets with cutting-edge technology."
     },
     {
       "id": 8,
       "name": "Olivia Garcia",
       "title": "Content Writer",
-      "image": "https://via.placeholder.com/150",
+      "image": "https://i.ibb.co.com/Hf9YnNtC/download-1.jpg",
       "short_description": "Crafting engaging content for various platforms."
     },
     {
       "id": 9,
       "name": "Daniel Harris",
       "title": "Full-Stack Developer",
-      "image": "https://via.placeholder.com/150",
+      "image": "https://i.ibb.co.com/FLCSttS0/images-4.jpg",
       "short_description": "Enjoys working on both frontend and backend technologies."
     },
     {
       "id": 10,
       "name": "Ava Thompson",
       "title": "Product Manager",
-      "image": "https://via.placeholder.com/150",
+      "image": "https://i.ibb.co.com/hF4cT516/images-5.jpg",
       "short_description": "Bridging the gap between users and developers."
     }
   ]
