@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Card = () => {
    const [item,setItem] = useState([])
@@ -12,7 +13,7 @@ const Card = () => {
     return (
         <div>
             <div className='text-center my-16 '>
-                <h1 className='text-5xl  font-bold text-cyan-700'>Trello Short</h1>
+                <h1 className='text-5xl  font-bold font-serif text-cyan-700'>Trello Short</h1>
                 <p className='mt-2 font-serif'>Trello is a visual project management tool that helps teams organize tasks, collaborate,<br /> and track progress using boards, lists, and cards.</p>
             </div>
             <div className='grid  grid-cols-3 gap-10 mb-20 lg:ml-20'>
@@ -29,7 +30,7 @@ const Card = () => {
                         </h2>
                         <p>{data.short_description}</p>
                         <div className="card-actions justify-end">
-                            <div className="badge badge-outline">Details</div>
+                            <Link to={`/details/${data.id}`} className="badge badge-outline">Details</Link>
                             <div className="badge badge-outline">Delate</div>
                         </div>
                     </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const ErrorElement = () => {
     return (
@@ -8,7 +9,7 @@ const ErrorElement = () => {
                 <div className="max-w-md">
                     <h1 className="text-9xl font-bold">Oops!</h1>
                     <p className="py-6 text-2xl"><span className="text-4xl font-bold">404</span>  Data Not Found</p>
-                    <p to='/'><button className="btn bg-green-600">Go To Home</button></p>
+                    <Link to='/'><button className="btn bg-green-600">Go To Home</button></Link>
                 </div>
             </div>
         </div>

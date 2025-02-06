@@ -4,6 +4,7 @@ import {
 import Main from "../Layout/Main";
 import ErrorElement from "../erorrElement/ErrorElement";
 import Home from "../Page/HomePage/Home";
+import CardDetails from "../component/CardDetails";
 
  export const router = createBrowserRouter([
     {
@@ -14,6 +15,11 @@ import Home from "../Page/HomePage/Home";
             {
                 path: '/',
                 element: <Home/>
+            },
+            {
+              path: '/details/:id',
+              element:<CardDetails/>,
+              loader: ()=>fetch('/public/Taskapi.json')
             }
         ]
     }

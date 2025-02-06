@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     return (
@@ -23,18 +24,18 @@ const Navbar = () => {
                         <ul
                             tabIndex={0}
                             className="menu font-serif menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                            <li><a>Home</a></li>
-                            <li><a>Details</a></li>
-                            <li><a>About</a></li>
+                            <Link to='/'><li><a>Home</a></li></Link>
+                            <Link to='/details'><li><a>Details</a></li></Link>
+                            <Link to='/about'><li><a>About</a></li></Link>
                         </ul>
                     </div>
                     <a className="btn btn-ghost text-2xl font-bold">Trello</a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu font-semibold menu-horizontal px-1">
-                        <li><a>Home</a></li>
-                        <li><a>Details</a></li>
-                        <li><a>About</a></li>
+                        <Link to='/'><li><a>Home</a></li></Link>
+                        <Link to='/details'><li><a>Details</a></li></Link>
+                        <Link to='/about'><li><a>About</a></li></Link>
                     </ul>
                 </div>
                 <div className="navbar-end">
