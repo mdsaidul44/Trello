@@ -7,8 +7,8 @@ const CardDetails = () => {
     const cards = cardDetails.find(card=>card.id == id)
     console.log('Data is here',cards)
     return (
-        <div>
-            This is card details
+        <div className='h-screen '>
+            This is card details {cards.id}
         </div>
     );
 };
