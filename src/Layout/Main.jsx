@@ -8,7 +8,7 @@ import Card from '../component/Card'
 const Main = () => {
     return (
         <div>
-            <div><Navbar/></div>
+            <div className=''><Navbar/></div>
             <div><Outlet></Outlet></div>
             <div><Footer/></div>
         </div>
