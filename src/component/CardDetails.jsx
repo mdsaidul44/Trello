@@ -1,25 +1,34 @@
 import React from 'react';
-import { useLoaderData, useParams } from 'react-router-dom';
+import { useLoaderData, useParams, useNavigate } from 'react-router-dom';
 
 const CardDetails = () => {
-    const cardDetails = useLoaderData()
-    const { id } = useParams()
-    const cards = cardDetails.find(card => card.id == id)
-    console.log('Data is here', cards)
+    const cardDetails = useLoaderData();
+    const { id } = useParams();
+    const navigate = useNavigate();
+
+    const cards = cardDetails.find(card => card.id == id);
+
+    const handleDelete = () => {
+        const updatedCards = cardDetails.filter(card => card.id != id);
+        // If using local state management, update state here
+        // If using an API, call the DELETE endpoint here
+        console.log('Deleted:', id);
+        alert('Card deleted successfully');
+        navigate('/'); // Redirect to home or another page after deletion
+    };
+
     return (
         <div className='h-screen p-32'>
-            <div class="card  lg:card-side bg-base-100 shadow-xl">
+            <div className="card lg:card-side bg-base-100 shadow-xl">
                 <figure>
-                    <img className='h-72'
-                        src={cards.image }
-                        alt="Album" />
+                    <img className='h-72' src={cards.image} alt="Album" />
                 </figure>
-                <div class="card-body font-serif">
-                    <h2 class="card-title">Title: {cards.title}</h2>
-                    <h2 class="card-title">{cards.name}</h2>
+                <div className="card-body font-serif">
+                    <h2 className="card-title">Title: {cards.title}</h2>
+                    <h2 className="card-title">{cards.name}</h2>
                     <p>{cards.short_description}</p>
-                    <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Delete</button>
+                    <div className="card-actions justify-end">
+                        <button className="btn btn-primary" onClick={handleDelete}>Delete</button>
                     </div>
                 </div>
             </div>
