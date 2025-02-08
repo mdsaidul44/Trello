@@ -5,7 +5,7 @@ const Card = () => {
    const [item, setItem] = useState([]);
 
    useEffect(() => {
-    fetch('/public/Taskapi.json')
+    fetch('Taskapi.json')
     .then(res => res.json())
     .then(data => setItem(data));
    }, []);

@@ -24,7 +24,7 @@ import Card from "../component/Card";
             {
               path: '/details/:id',
               element:<CardDetails/>,
-              loader: ()=>fetch('/public/Taskapi.json')
+              loader: ()=>fetch('/Taskapi.json')
             }
         ]
     }
